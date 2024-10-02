@@ -57,18 +57,19 @@ If an invalid storage class is provided, the script will terminate with an error
 To install the script and make it available globally, you can use the provided `install.sh` script:
 
 1. Clone the repository or download the scripts.
-2. Navigate to the directory where the `install.sh` file is located.
+2. Navigate to the directory where the `install.sh` file is located. --Should be 's3upload'.
 ```bash
 cd path/to/repo
 ```
-3. Run the installation script:
+3. Run the installation script after making it executable.
 ```bash
+chmod +x install.sh
 ./install.sh
 ```
 
 This will copy the s3upload.sh to /usr/local/bin and make it executable.
 
-Note: You may need to use sudo to run the installation script if you are installing to /usr/local/bin.
+Note: You may need to use sudo to run the installation script depending on your privileges.
 
 License
 This project is licensed under the MIT License.
