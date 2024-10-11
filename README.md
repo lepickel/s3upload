@@ -41,7 +41,7 @@ EXAMPLE:
 ```
 This command uploads myfile.txt to the some/directory inside mybucket using the STANDARD_IA storage class.
 
-## Handling File Existence
+## Handling Duplicate Files
 If the file already exists in the S3 bucket, the script will provide three options:
 
 - Skip upload: The script will exit without uploading the file.
@@ -80,7 +80,23 @@ aws configure list
 ```
 - Ensure S3 bucket is public and the bucket policy allows s3:PutObject action.
 
+## Future Enhancements
+In the future, my plan is to enhance this tool with the following features:
 
+### Multiple File Uploads
+Enjoy the convenience of uploading multiple files in a single command, streamlining the process.
 
-License
+### Progress Tracking
+A progress tracking feature allowing users to monitor the status of their file uploads.
+
+### Shareable Links
+After uploading, generate and display shareable links, making it simple to share files with others.
+
+### File Encryption
+For added security, an encryption feature will be implemented to safeguard your files during the upload process.
+
+## Contributing
+Feel free to contribute by opening an issue or submitting a pull request. Feedback and suggestions are welcome!
+
+## License
 This project is licensed under the MIT License.
