@@ -71,5 +71,16 @@ This will copy the s3upload.sh to /usr/local/bin and make it executable.
 
 Note: You may need to use sudo to run the installation script depending on your privileges.
 
+## Troubleshooting
+
+If you encounter issues:
+- Ensure AWS CLI is installed and properly configured with approriate credentials, region, output by running
+```bash
+aws configure list
+```
+- Ensure S3 bucket is public and the bucket policy allows s3:PutObject action.
+
+
+
 License
 This project is licensed under the MIT License.
